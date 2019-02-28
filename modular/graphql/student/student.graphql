@@ -1,0 +1,11 @@
+# import Class from "../class/class.graphql"
+
+type Student {
+  id: ID!
+  name: String
+  classes: [Class]
+}
+
+type Query {
+  student(id: ID!): Student
+}

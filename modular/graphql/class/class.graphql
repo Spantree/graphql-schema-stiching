@@ -1,0 +1,9 @@
+type Class {
+  id: ID!
+  name: String
+  description: String
+}
+
+type Query {
+  class(id: ID!): Class
+}
